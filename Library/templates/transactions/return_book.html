@@ -1,0 +1,12 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Return Book</h2>
+<p>Book: {{ tx.book.title }}</p>
+<p>Issued to: {{ tx.member.name }}</p>
+<p>Issued on: {{ tx.issue_date }}</p>
+<form method="post">{% csrf_token %}
+  <button type="submit" class="btn btn-warning">Return Book and Charge Rent</button>
+</form>
+{% endblock %}

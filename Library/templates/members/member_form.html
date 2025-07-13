@@ -1,0 +1,12 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>{{ member|default:'Add New Member' }}</h2>
+<form method="post">{% csrf_token %}
+  <input type="text" name="name" placeholder="Full Name" value="{{ member.name|default:'' }}" class="form-control mb-2" required>
+  <input type="email" name="email" placeholder="Email" value="{{ member.email|default:'' }}" class="form-control mb-2" required>
+  <input type="text" name="phone" placeholder="Phone" value="{{ member.phone|default:'' }}" class="form-control mb-2" required>
+  <button type="submit" class="btn btn-success">Save</button>
+</form>
+{% endblock %}

@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h2>Issue Book</h2>
+<form method="post" class="mb-4">{% csrf_token %}
+  <select name="member" class="form-control mb-2">
+    {% for m in members %}<option value="{{ m.id }}">{{ m.name }}</option>{% endfor %}
+  </select>
+  <select name="book" class="form-control mb-2">
+    {% for b in books %}<option value="{{ b.id }}">{{ b.title }} (Stock: {{ b.stock }})</option>{% endfor %}
+  </select>
+  <button type="submit" class="btn btn-success">Issue Book</button>
+</form>
+
+<hr>
+
+<h2>Currently Issued Books</h2>
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>Book</th>
+      <th>Issued To</th>
+      <th>Issue Date</th>
+      <th>Return</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for tx in issued %}
+    <tr>
+      <td>{{ tx.book.title }}</td>
+      <td>{{ tx.member.name }}</td>
+      <td>{{ tx.issue_date }}</td>
+      <td>
+        <a href="{% url 'return_book' tx.id %}" class="btn btn-warning btn-sm">Return</a>
+      </td>
+    </tr>
+    {% empty %}
+    <tr><td colspan="4">No books currently issued.</td></tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+{% endblock %}

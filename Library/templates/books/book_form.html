@@ -1,0 +1,15 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>{{ book|default:'Add New Book' }}</h2>
+<form method="post">{% csrf_token %}
+  <input type="text" name="book_id" placeholder="Book ID" value="{{ book.book_id|default:'' }}" class="form-control mb-2" required>
+  <input type="text" name="title" placeholder="Title" value="{{ book.title|default:'' }}" class="form-control mb-2" required>
+  <input type="text" name="author" placeholder="Author" value="{{ book.author|default:'' }}" class="form-control mb-2">
+  <input type="text" name="isbn" placeholder="ISBN" value="{{ book.isbn|default:'' }}" class="form-control mb-2">
+  <input type="text" name="publisher" placeholder="Publisher" value="{{ book.publisher|default:'' }}" class="form-control mb-2">
+  <input type="number" name="stock" placeholder="Stock" value="{{ book.stock|default:'1' }}" class="form-control mb-2">
+  <button type="submit" class="btn btn-success">Save</button>
+</form>
+{% endblock %}
