@@ -32,7 +32,7 @@ The app provides a clean and intuitive interface for managing day-to-day tasks a
 - **Book Import via API**:
   - Fetches book data from Frappe Library API
   - Imports multiple books with pre-filled information like book-id, title, author, ISBN, etc.
-![Alt text](https://github.com/akash-buddy/LMSystem/blob/34258b15e09cfc89a838c0d3cc53b72109bfebee/readme_image/member.png)
+![Alt text](https://github.com/akash-buddy/LMSystem/blob/d794131421218e55327b4c1fbc0969f721218837/readme_image/import_book.png)
 - **Admin Interface**: Manage all models (books, members, transactions) via Django's built-in admin panel.
 - **User-Friendly Interface**: Clean and organized templates for easy use by library staff.
 
