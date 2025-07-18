@@ -150,12 +150,12 @@ def import_books(request):
             if publisher:
                 params["publisher"] = publisher
             res = requests.get("https://frappe.io/api/method/frappe-library", params=params)
-            print(res.url)
+            
             if res.status_code != 200:
                 break
 
             data = res.json().get("message", [])
-            print(data)
+            
             if not data:
                 break
 
