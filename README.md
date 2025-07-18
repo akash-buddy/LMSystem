@@ -17,6 +17,7 @@ The app provides a clean and intuitive interface for managing day-to-day tasks a
 ## 🔍 Key Features
 
 - **Book Management (CRUD)**: Add, edit, update, and delete books with fields like title, author, ISBN, publisher, and stock count.
+![Alt text](https://github.com/akash-buddy/LMSystem/blob/4ae4f70cbb1c512ee967322acd5028e34bcf1ddc/readme_image/book_view.png)
 - **Member Management (CRUD)**: Add and manage library members with details like name, email, phone, and debt.
 - **Issue and Return Books**:
   - Issues books to members.
