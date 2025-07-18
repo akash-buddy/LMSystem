@@ -19,10 +19,12 @@ The app provides a clean and intuitive interface for managing day-to-day tasks a
 - **Book Management (CRUD)**: Add, edit, update, and delete books with fields like title, author, ISBN, publisher, and stock count.
 ![Alt text](https://github.com/akash-buddy/LMSystem/blob/4ae4f70cbb1c512ee967322acd5028e34bcf1ddc/readme_image/book_view.png)
 - **Member Management (CRUD)**: Add and manage library members with details like name, email, phone, and debt.
+![Alt text](https://github.com/akash-buddy/LMSystem/blob/34258b15e09cfc89a838c0d3cc53b72109bfebee/readme_image/member.png)
 - **Issue and Return Books**:
   - Issues books to members.
   - Calculates rent fee based on number of days borrowed (₹10/day).
   - Updates book stock accordingly.
+![Alt text](https://github.com/akash-buddy/LMSystem/blob/34258b15e09cfc89a838c0d3cc53b72109bfebee/readme_image/member.png)
 - **Debt Handling**:
   - Automatically adds rent to the member’s debt upon return.
   - Blocks issuing if debt exceeds ₹500.
@@ -30,6 +32,7 @@ The app provides a clean and intuitive interface for managing day-to-day tasks a
 - **Book Import via API**:
   - Fetches book data from Frappe Library API
   - Imports multiple books with pre-filled information like book-id, title, author, ISBN, etc.
+![Alt text](https://github.com/akash-buddy/LMSystem/blob/34258b15e09cfc89a838c0d3cc53b72109bfebee/readme_image/member.png)
 - **Admin Interface**: Manage all models (books, members, transactions) via Django's built-in admin panel.
 - **User-Friendly Interface**: Clean and organized templates for easy use by library staff.
 
