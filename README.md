@@ -24,7 +24,7 @@ The app provides a clean and intuitive interface for managing day-to-day tasks a
   - Issues books to members.
   - Calculates rent fee based on number of days borrowed (₹10/day).
   - Updates book stock accordingly.
-![Alt text](https://github.com/akash-buddy/LMSystem/blob/34258b15e09cfc89a838c0d3cc53b72109bfebee/readme_image/member.png)
+![Alt text](https://github.com/akash-buddy/LMSystem/blob/b13e8ddd9d065781ce6d2c388145166e45ced765/readme_image/issue_book.png)
 - **Debt Handling**:
   - Automatically adds rent to the member’s debt upon return.
   - Blocks issuing if debt exceeds ₹500.
